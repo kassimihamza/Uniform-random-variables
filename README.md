@@ -1,1 +1,3 @@
 ### Uniform-random-variables
+
+To simulate samples from a uniformm distribution over  [0,1] , a congruent generator is defined from a recursive sequence in the form  𝑥𝑛+1=(𝑎.𝑥𝑛+𝑏)%𝑚 , where  %  stands for the remainder of integer division. We will consider the case where  𝑎=65539 ,  𝑏=0  and  𝑚=231  that defines the RANDU generator. We intialize the sequence with  𝑥0≠0  and thus define iteratively values  𝑥1,𝑥2,…  that are in the set  {1,…,𝑚−1} . Then, the corresponding values  𝑢𝑛=𝑥𝑛/𝑚  are in  [0,1] . We want to check that the samples  𝑢0,𝑢1,𝑢2,…  are approximately distributed according to a uniform distribution over  [0,1] .
